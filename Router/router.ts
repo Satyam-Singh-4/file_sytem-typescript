@@ -1,8 +1,7 @@
-import express from "express";
+import { Router } from "express";
 import * as middleware from "../middleware/middleware";
-const router = express.Router();
+
+export const router = Router();
 
 //Router to upload file
 router.post("/uploadFile", middleware.uploadFile);
-
-export { router };
